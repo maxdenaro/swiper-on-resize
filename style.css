@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 100px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.swiper-slide {
+  grid-column: 4 span;
+}
+
+.content-card {
+  padding: 20px;
+  min-height: 200px;
+  font-family: sans-serif;
+  background-color: wheat;
+}
+
+@media (max-width: 1500px) {
+  .slider-2 .swiper-wrapper {
+    display: flex;
+    column-gap: 0;
+  }
+}
+
+@media (max-width: 1280px) {
+  .slider-1 .swiper-wrapper {
+    display: flex;
+    column-gap: 0;
+  }
+}
